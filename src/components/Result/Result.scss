@@ -1,0 +1,13 @@
+@import '../../styles/config.scss';
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  @include flex($direction: column);
+  border: 1px solid rgb(105, 6, 176);
+  border-radius: 5px;
+
+  .word {
+    font-size: 14px;
+  }
+}
