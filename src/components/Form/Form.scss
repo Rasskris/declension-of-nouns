@@ -1,0 +1,36 @@
+@import '../../styles/config.scss';
+
+.form-wrapper {
+  padding: 20px;
+  width: 80%;
+  max-width: 450px;
+  @include flex($direction: column);
+  background-color: #fff;
+  border-radius: 0.8125rem;
+  box-shadow: 19px -4px 39px -20px #6f6e6e, -14px 11px 15px -12px #6f6e6e;
+}
+
+.form {
+  padding: 0.625rem;
+  width: 90%;
+  @include flex($direction: column, $justify: space-evenly);
+  background-color: inherit;
+  transition: all 0.25s ease-out;
+}
+
+.title-case {
+  font-size: 12px;
+  font-weight: 100;
+  border-bottom: 1px solid rgb(92, 29, 181);
+}
+
+.btn-container {
+  @include flex($justify: space-evenly);
+}
+
+.btn-reset {
+  @include button($border-radius: 30px);
+
+  background: rgb(218, 35, 35);
+  background: linear-gradient(90deg, rgba(208, 43, 43, 0.978) 21%, rgb(168, 54, 54) 100%);
+}
