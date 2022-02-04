@@ -1,0 +1,12 @@
+@import '../../styles/config.scss';
+
+.btn {
+  @include button($border-radius: 10px);
+  background: rgb(54, 0, 134);
+  background: linear-gradient(90deg, rgba(54, 0, 134, 0.9780287114845938) 21%, rgba(128, 54, 168, 1) 100%);
+
+  &.active {
+    background: rgb(35, 139, 218);
+    background: linear-gradient(90deg, rgba(0, 125, 134, 0.978) 21%, rgb(54, 138, 168) 100%);
+  }
+}
