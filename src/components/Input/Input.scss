@@ -1,0 +1,47 @@
+@import '../../styles/config.scss';
+
+.label {
+  margin-bottom: 10px;
+  padding-top: 5px;
+  width: 100%;
+  @include flex($direction: column, $justify: flex-start, $align: flex-start);
+  text-align: center;
+}
+
+.input {
+  margin-top: 10px;
+  padding: 12px 15px;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  background: #eaeef1;
+  color: rgb(41, 41, 41);
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  &:focus {
+    border-bottom: 0.125rem solid $focus-color;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 0.75rem;
+
+  &::before {
+    display: inline;
+    content: '⚠ ';
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-bottom: 0.125rem solid $border-color;
+  transition: background-color 5000s ease-in-out 0s;
+}
